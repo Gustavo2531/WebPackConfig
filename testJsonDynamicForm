@@ -1,0 +1,277 @@
+{
+    "name":"Symphony",
+    "page":1,
+    "fieldstotal":[
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "text",
+                "label": "Name",
+                "modelFieldKey": "appName",
+                "defaultValue": "Enter a name for your application"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": true,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "textarea",
+                "label": "Description",
+                "modelFieldKey": "description",
+                "defaultValue": "Describe your application"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "text",
+                "label": "Icon",
+                "modelFieldKey": "Icon",
+                "defaultValue": "Browse"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "seperator",
+                "label": "separator",
+                "modelFieldKey": "separator"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "select",
+                "label": "App Type*",
+                "modelFieldKey": "apptype",
+                "dfgEvents": "http://localhost:3001/distributions/",
+                "defaultOptionList": [
+                   
+                ]
+                
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "select",
+                "label": "template Type*",
+                "modelFieldKey": "templatetype",
+                "parentGroupNameModelKey": "apptype",
+                "dfgEvents": "http://localhost:3001/templates/",
+                "defaultOptionList": [
+                   
+                ]
+                
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "label",
+                "label": "Audience",
+                "modelFieldKey": "newField"
+            },
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "radio",
+                "label": "Internal",
+                "modelFieldKey": "audience",
+                "radioButtonValue": "internal",
+                "radioButtonGroup": "audience"
+            },
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "radio",
+                "label": "External",
+                "modelFieldKey": "audience",
+                "radioButtonValue": "external",
+                "radioButtonGroup": "audience"
+            },
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "radio",
+                "label": "Both",
+                "modelFieldKey": "audience",
+                "radioButtonValue": "both",
+                "radioButtonGroup": "audience"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "label",
+                "label": "Channels",
+                "modelFieldKey": "newField"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "checkbox",
+                "label": "JPM Desktop",
+                "modelFieldKey": "JPMDesktop"
+            },
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "checkbox",
+                "label": "JPM Web",
+                "modelFieldKey": "JPMWeb",
+                "defaultValue": "JPMWeb"
+            },
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "checkbox",
+                "label": "Symphony",
+                "modelFieldKey": "Symphony"
+            },
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "checkbox",
+                "label": "Mobile",
+                "modelFieldKey": "Mobile"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": true,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "select-text",
+                "label": "Searchable",
+                "modelFieldKey": "selectSearchable",
+                "defaultOptionList": [],
+                "dfgEvents": "http://localhost:3001/technology"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "seperator",
+                "label": "New Field",
+                "modelFieldKey": "newField"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": true,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "file-upload",
+                "label": "Upload",
+                "modelFieldKey": "fileUpload",
+                "allowMultiple": "false",
+                "customFileUpload": "false"
+            }
+        ]
+    },
+    {
+        "columnSize": 1,
+        "fields": [
+            {
+                "disabled": false,
+                "required": false,
+                "hidden": false,
+                "expanded": false,
+                "controlType": "button",
+                "label": "Continue",
+                "modelFieldKey": "newField",
+                "actionConfig": {
+                    "actionType": "",
+                    "actionName": "",
+                    "actionApiUrl": "1",
+                    "httpMethod": "",
+                    "actionParameterKey": "",
+                    "actionApiName": "",
+                    "actionRedirect": "/creation/1",
+                    "actionRedirectParameterKey": "",
+                    "actionResultBindModelKey": "",
+                    "actionDescription": ""
+                }
+            }
+        ]
+    }]}
